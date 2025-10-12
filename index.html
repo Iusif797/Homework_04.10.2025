@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <meta name="theme-color" content="#0c0f12">
+    <title>StarBucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/StarBucks_logo.png">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./main.js"></script>
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="brand" aria-label="StarBucks">
+                <span class="brand-text">StarBucks</span>
+            </a>
+            <nav class="nav" aria-label="Основная навигация">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="sr-only">Открыть меню</span>
+                    <span class="burger" aria-hidden="true">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </span>
+                </button>
+                <ul id="primary-nav" class="nav-list">
+                    <li><a class="nav-link active" href="#home" aria-current="page">Home</a></li>
+                    <li><a class="nav-link" href="#select">Select</a></li>
+                    <li><a class="nav-link" href="#shop">Shop</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero container" id="home" aria-label="Hero">
+        <section class="hero-content">
+            <h1 class="hero-title">
+                New Cafe<br>
+                by <span class="accent">StarBucks</span>
+            </h1>
+            <p class="hero-sub">Have time to buy the most harmonious drinks in the
+                new Starbucks coffee and don't forget about the discount!</p>
+            <div class="hero-ctas">
+                <a href="#select" class="btn btn-select" aria-label="Select a coffee">
+                    <span>Select a coffee</span>
+                </a>
+                <a href="#more" class="btn btn-more" aria-label="More">
+                    <span>More</span>
+                </a>
+            </div>
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-number">9k<span class="stat-plus">+</span></div>
+                    <div class="stat-label">Premium<br>Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2k<span class="stat-plus">+</span></div>
+                    <div class="stat-label">Happy<br>Customer</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">28<span class="stat-plus">+</span></div>
+                    <div class="stat-label">Awards<br>Winning</div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="hero-media">
+            <img class="hero-cup" src="./assets/Starbucks_cap.png" alt="Starbucks cap">
+        </section>
+    </main>
+    
+    <section class="features-section" id="features" aria-label="Features">
+        <div class="container">
+            <div class="features-card">
+                <div class="features-sticker" aria-hidden="true">
+                    <img src="./assets/wehave.png" alt="" class="features-sticker-image">
+                    <div class="features-sticker-text">WE<br>HAVE</div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <span class="feature-circle" aria-hidden="true"></span>
+                        <img src="./assets/Tasty.png" alt="Tasty" class="feature-img">
+                    </div>
+                    <h3 class="feature-title">Tasty</h3>
+                    <p class="feature-desc">We have the most<br>delicious coffee</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <span class="feature-circle" aria-hidden="true"></span>
+                        <img src="./assets/Fast.png" alt="Fast" class="feature-img">
+                    </div>
+                    <h3 class="feature-title">Fast</h3>
+                    <p class="feature-desc">Our cafe will serve you<br>quickly</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <span class="feature-circle" aria-hidden="true"></span>
+                        <img src="./assets/Available.png" alt="Available" class="feature-img">
+                    </div>
+                    <h3 class="feature-title">Available</h3>
+                    <p class="feature-desc">Cafe will serveat the<br>most pleasant prices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cafe-section" id="cafe" aria-label="About our cafe">
+      <div class="container">
+        <div class="cafe-card">
+          <div class="cafe-media">
+            <span class="cafe-frame" aria-hidden="true"></span>
+            <img src="./assets/cafe_place.png" alt="Cozy cafe interior" class="cafe-img-main">
+            <div class="cafe-sticker" aria-hidden="true">
+              <img src="./assets/wehave.png" alt="" class="cafe-sticker-img">
+              <span class="cafe-sticker-text">WE<br>HAVE</span>
+            </div>
+          </div>
+
+          <div class="cafe-content">
+            <h2 class="cafe-title">We make<br><span class="accent-gradient">delicious</span></h2>
+            <p class="cafe-desc">Only in 2021 we have made more than 100,000 orders for you, your loved ones, all of you, and in 2022 we are ready to destroy the market</p>
+
+            <div class="cafe-thumb">
+              <img src="./assets/cafe_place_2.png" alt="Kitchen process" class="cafe-img-secondary">
+              <a href="#" class="cafe-cta" aria-label="Watch Cooking Process">
+                <svg class="cta-play" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 5v14l11-7L8 5z" fill="currentColor"/></svg>
+                <span>Cooking Process</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Decorative waves -->
+          <svg class="cafe-waves" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0 80 C60 20, 120 140, 180 80 S300 20, 360 80" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+            <path d="M0 96 C60 36, 120 156, 180 96 S300 36, 360 96" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+            <path d="M0 112 C60 52, 120 172, 180 112 S300 52, 360 112" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+    
+    <section class="products-section" id="products" aria-label="New Our Products">
+      <div class="container">
+        <div class="products-head">
+          <h2 class="products-title">New Our<br><span class="accent-gradient">Products</span></h2>
+          <p class="products-sub">Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget the discount! Starbucks coffee and don't forget about the discount!</p>
+        </div>
+
+        <div class="products-row">
+          <article class="product-card">
+            <div class="product-top">
+              <span class="product-circle" aria-hidden="true"></span>
+              <img src="./assets/starbucks1.png" alt="Pumpkin Spice Starbucks cup" class="product-img">
+            </div>
+            <h3 class="product-name">Fast</h3>
+            <p class="product-desc">Our cafe will serve you quickly</p>
+            <div class="product-meta"><span class="price">7,45$</span><span class="vol">330 ml</span></div>
+            <a href="#" class="product-btn">Buy Product</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-top">
+              <span class="product-circle" aria-hidden="true"></span>
+              <img src="./assets/Starbucks_cap.png" alt="Classic Starbucks cup" class="product-img">
+            </div>
+            <h3 class="product-name">Fast</h3>
+            <p class="product-desc">Our cafe will serve you quickly</p>
+            <div class="product-meta"><span class="price">7,45$</span><span class="vol">330 ml</span></div>
+            <a href="#" class="product-btn">Buy Product</a>
+          </article>
+
+          <article class="product-card product-card--accent">
+            <div class="product-top">
+              <span class="product-circle" aria-hidden="true"></span>
+              <img src="./assets/Starbucks_greencap.png" alt="Green Starbucks cup" class="product-img">
+            </div>
+            <h3 class="product-name">Cappuccino</h3>
+            <p class="product-desc">Our cafe will serve you quickly</p>
+            <div class="product-meta"><span class="price">7,45$</span><span class="vol">330 ml</span></div>
+            <a href="#" class="product-btn">Buy Product</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <section class="events-section" id="events" aria-label="Our New Events">
+      <div class="container">
+        <div class="events-head">
+          <p class="events-lead">Only in 2021 we have made more than 100,000 orders for you, your loved ones, all of you, and in 2022 we are ready to destroy the market</p>
+          <h2 class="events-title">Our New<br><span class="accent-gradient">Events</span></h2>
+        </div>
+
+        <div class="events-grid">
+          <article class="event-card event-wide">
+            <img src="./assets/background_1.png" alt="Two coffee for one price banner" class="event-img">
+            <div class="event-overlay"></div>
+            <h3 class="event-title">TWO COFFEE<br>FOR 1 PRICE</h3>
+            <a href="#" class="event-btn">More</a>
+          </article>
+
+          <article class="event-card event-wide">
+            <img src="./assets/kitchen_tour.png" alt="Kitchen tour banner" class="event-img">
+            <div class="event-overlay"></div>
+            <h3 class="event-title">KITCHEN<br>TOUR</h3>
+            <a href="#" class="event-btn">More</a>
+          </article>
+
+          <article class="event-card">
+            <img src="./assets/free_coffee.png" alt="Free coffee for 3 coffee" class="event-img">
+            <div class="event-overlay"></div>
+            <h3 class="event-title">FREE COFFEE<br>FOR 3 COFFEE</h3>
+            <a href="#" class="event-btn">More</a>
+          </article>
+
+          <article class="event-card">
+            <img src="./assets/our_instagram.png" alt="Our instagram" class="event-img">
+            <div class="event-overlay"></div>
+            <h3 class="event-title">OUR<br>INSTAGRAM</h3>
+            <a href="#" class="event-btn">More</a>
+          </article>
+
+          <article class="event-card">
+            <img src="./assets/where_choose_us.png" alt="Where are you choose us?" class="event-img">
+            <div class="event-overlay"></div>
+            <h3 class="event-title">WHERE ARE YOU<br>CHOOSE US?</h3>
+            <a href="#" class="event-btn">More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <section class="contacts-section" id="contacts" aria-label="Our Contacts">
+      <div class="container">
+        <div class="contacts-card">
+          <div class="contacts-content">
+            <h2 class="contacts-title">
+              Our <span class="accent-gradient">Contacts</span>
+            </h2>
+            <p class="contacts-desc">Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!</p>
+            
+            <div class="contacts-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <span class="contact-text">@supercoffee</span>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <span class="contact-text">+420773975235</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contacts-media">
+            <div class="contacts-image-container">
+              <img src="./assets/starbucks_logo_b.png" alt="Starbucks store" class="contacts-image">
+              <div class="contacts-badge">
+                <img src="./assets/wehave.png" alt="We Have Badge" class="contacts-badge-image">
+                <div class="contacts-badge-text">WE<br>HAVE</div>
+              </div>
+            </div>
+            
+            <svg class="contacts-waves" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M50 100 C100 60, 150 140, 200 100 S300 60, 350 100" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+              <path d="M50 120 C100 80, 150 160, 200 120 S300 80, 350 120" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+              <path d="M50 140 C100 100, 150 180, 200 140 S300 100, 350 140" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h2 class="footer-logo">StarBucks</h2>
+            <div class="footer-contact">
+              <span class="footer-phone">+420773975235</span>
+              <a href="#" class="footer-instagram" aria-label="Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <nav class="footer-nav">
+            <div class="footer-column">
+              <h3 class="footer-title">Main</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Buy</a></li>
+                <li><a href="#" class="footer-link">More</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-title">We make</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Process</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-title">Products</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Cappuccino</a></li>
+                <li><a href="#" class="footer-link">Fast</a></li>
+                <li><a href="#" class="footer-link">Fast</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-title">Events</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Drinks</a></li>
+                <li><a href="#" class="footer-link">Eat</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-title">Contacts</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Instagram</a></li>
+                <li><a href="#" class="footer-link">Number</a></li>
+              </ul>
+            </div>
+          </nav>
+          
+          <div class="footer-scroll">
+            <button class="scroll-top" aria-label="Scroll to top">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
